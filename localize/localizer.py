@@ -121,14 +121,6 @@ class iOSLocalizer(Localizer):
 
         return data
 
-    @property
-    def localization_source_map(self):
-        loc_map = {}
-        for data in self.localizable_data:
-            loc_map[data.replacement_key] = data.localization_key
-
-        return loc_map
-
 
 #===------------------------------------------------------------------------===#
 # Android localizer
@@ -193,10 +185,3 @@ class AndroidLocalizer(Localizer):
             self._localize_node(child, data)
 
         xml.write(localizable.file_path)
-
-    @property
-    def localization_source_map(self):
-        return self.localizable_data
-    
-
-
