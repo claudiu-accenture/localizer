@@ -43,9 +43,9 @@ Once executed, the script walks the directory tree and aggregates the localizabl
 
 A [YAML][yaml_wiki] file that defines:
 
-    - supported languages
-    - default languages
-    - where to get localizations
+- supported languages
+- default language
+- where to get localizations
 
 
 ### Example config from SMS Solutions
