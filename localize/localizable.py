@@ -41,4 +41,10 @@ class AndroidLocalizable(Localizable):
             replace_str = 'values'
 
         language_id = parent_stem.replace(replace_str, '') or self._config.default_language
-        return self._config.language_map[language_id]
+        if language_id in self._config.language_map:
+            return self._config.language_map[language_id]
+        else:
+            info = \
+                "Attempting to localize file:\n  {}\n" \
+                "to unknown language, key:\n  {}"
+            raise ValueError(info.format(file_path, language_id))
