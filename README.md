@@ -31,6 +31,14 @@ Alternatively, you can pass in another config file after the platform:
     localize <ios|android> [CONFIG]
 
 
+## Which files are localized
+
+Once executed, the script walks the directory tree and aggregates the localizable files, which are assumed to be:
+
+- Android: files located in a `values` directory, that start with `string` and have extension `.xml`
+- iOS: file has the extension `.string`
+
+
 ## Config
 
 A [YAML][1] file that defines:
