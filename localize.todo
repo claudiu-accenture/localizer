@@ -1,0 +1,23 @@
++- 	parse args
++- 	read config
+	+-	list of localization urls
+	+-	language map
++- 	scan for all localizable files:
+	+- 	android: string*.xml
+	+-	ios: *.strings
++-	parse localizable files:
+	+-	ios: build replacement maps (keys in comments)
+	+-	android: parse xml
++- 	parse data
++- 	build system-specific localizations
+	-	 "item" split 'name' on '-'
+	        +- 	android: left is name of string-array
+	        +- 	ios: right is string name part
++- 	check that all strings are unique
+	+-  	abort and print if they aren't
++- 	download data
++-	determine languages
++-	localize the actual files
+	+-	iOS
+	+-	Android
+---	Unit tests
