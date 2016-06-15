@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Localize
 
-Localize an iOS or Android app's strings from a Sheetsu Google Sheet API.
+Localize an iOS or Android app's strings from a Google Sheet API.
 
 Usage:
     localize (ios | android) [CONFIG]
