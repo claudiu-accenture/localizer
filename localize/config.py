@@ -21,7 +21,6 @@ class Config:
             - a language map, mapping the sheet columns with localizations
             - which default language
             - a list of {name, url} dictionaries to retrieve localizations
-                - set the default to "--"
         """
         with open(file_name) as f:
             config = yaml.load(f)
