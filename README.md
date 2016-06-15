@@ -35,17 +35,18 @@ Alternatively, you can pass in another config file after the platform:
 
 Once executed, the script walks the directory tree and aggregates the localizable files, which are assumed to be:
 
-- **Android**: files located in a `values` directory, that start with `string` and have extension `.xml`
+- **Android**: files that start with `string` and have extension `.xml`, which are located in a directory that starts with `values`
 - **iOS**: file has the extension `.string`
 
 
 ## Config
 
-A [YAML][1] file that defines:
+A [YAML][yaml_wiki] file that defines:
 
-- supported languages
-- default languages
-- where to get localizations
+    - supported languages
+    - default languages
+    - where to get localizations
+
 
 ### Example config from SMS Solutions
 
@@ -70,4 +71,5 @@ sources:
         url: https://spreadsheets.google.com/feeds/list/1yQx7TLqeugzpY9JyjZw9mslBwJ6Pc8SDPdHBlMUlJ4w/6/public/values?alt=json
 ```
 
-[1]: https://en.wikipedia.org/wiki/YAML
+
+[yaml_wiki]: https://en.wikipedia.org/wiki/YAML
