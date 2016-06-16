@@ -41,6 +41,8 @@ Once executed, the script walks the directory tree and aggregates the localizabl
 
 ## Google spreadsheets JSON URLs
 
+First, the spreadsheet has to be made available to public. Alas. :slight_frown:
+
 Get the spreadsheet ID from the URL, for example:  
 
 > https://docs.google.com/spreadsheets/d/**1yQx7TLqeugzpY9JyjZw9mslBwJ6Pc8SDPdHBlMUlJ4w**/edit#gid=1452760078
