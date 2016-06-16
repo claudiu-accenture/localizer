@@ -39,6 +39,17 @@ Once executed, the script walks the directory tree and aggregates the localizabl
 - **iOS**: file has the extension `.string`
 
 
+## Google spreadsheets JSON URLs
+
+Get the spreadsheet ID from the URL, for example:  
+
+> https://docs.google.com/spreadsheets/d/**1yQx7TLqeugzpY9JyjZw9mslBwJ6Pc8SDPdHBlMUlJ4w**/edit#gid=1452760078
+
+And change the placeholders in this URL:
+
+> https://spreadsheets.google.com/feeds/list/**[SPREADHSEET_ID]**/**[SHEET_NUMBER]**/public/values?alt=json
+
+
 ## Config
 
 A [YAML][yaml_wiki] file that defines:
