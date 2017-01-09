@@ -69,9 +69,14 @@ class Downloader:
 # Cleanup Google Spreadsheets localizations
 
 def _parse_google_spreadsheets(raw_json):
-    raw_data = json.loads(raw_json)
-    loc_data = raw_data['feed']['entry']
+    try:
+        raw_data = json.loads(raw_json)
+    except:
+        msg = "Failed to load the localization data JSON"
+        hint = "check that the spreadsheet is public"
+        raise Exception("{} (hint: {})".format(msg, hint))
 
+    loc_data = raw_data['feed']['entry']
     if len(loc_data) == 0: 
         return []
 
