@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='Localize',
-    version='0.2.5',
+    version='0.2.6',
     install_requires=['requests', 'docopt', 'pyyaml'],
     packages=['localize'],
     entry_points={
