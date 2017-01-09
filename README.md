@@ -41,7 +41,7 @@ Once executed, the script walks the directory tree and aggregates the localizabl
 
 ## Google spreadsheets JSON URLs
 
-First, the spreadsheet has to be made available to public. Alas. :slight_frown:
+:warning: First, the spreadsheet has to be made available to public via the Google Sheets' Publish functionality. Alas. :slight_frown:
 
 Get the spreadsheet ID from the URL, for example:  
 
