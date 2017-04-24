@@ -88,4 +88,4 @@ sources:
 [yaml_wiki]: https://en.wikipedia.org/wiki/YAML
 
 # Common issues
-If following issues is encountered " KeyError: 'entry' " be sure to verify the order of the sheets.
+If following issues is encountered ` KeyError: 'entry' ` be sure to verify the order of the sheets.
