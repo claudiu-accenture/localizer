@@ -101,7 +101,7 @@ class iOSLocalizer(Localizer):
         if localization:
             key = loc_data.replacement_key
             (left, right) = line.split('" = "')
-            temp = localization[lang].replace(‘“’, ‘\\“‘)
+            temp = localization[lang].replace("\"", "\\\"")
             if len(key) > 0:
                 right = right.replace(key, temp)
             else:
